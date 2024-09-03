@@ -43,7 +43,7 @@ int main()
 
     auto range_map = map.device_range();
 
-#define OLD_WORKING_CODE 0
+#define OLD_WORKING_CODE 1
 #if OLD_WORKING_CODE
     thrust::host_vector<stdgpu::pair<A, B>> host_pairs(map.size());
     thrust::copy(range_map.begin(), range_map.end(), host_pairs.begin());
